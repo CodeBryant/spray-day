@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprayDay", "SprayDay\SprayDay.csproj", "{5471B0F0-2937-4BAC-939A-CA9BAA34724A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprayDayContent", "SprayDayContent\SprayDayContent.contentproj", "{9A3042DA-264E-4547-8B5D-D5DE7653CC9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5471B0F0-2937-4BAC-939A-CA9BAA34724A}.Debug|x86.ActiveCfg = Debug|x86
+		{5471B0F0-2937-4BAC-939A-CA9BAA34724A}.Debug|x86.Build.0 = Debug|x86
+		{5471B0F0-2937-4BAC-939A-CA9BAA34724A}.Release|x86.ActiveCfg = Release|x86
+		{5471B0F0-2937-4BAC-939A-CA9BAA34724A}.Release|x86.Build.0 = Release|x86
+		{9A3042DA-264E-4547-8B5D-D5DE7653CC9F}.Debug|x86.ActiveCfg = Debug|x86
+		{9A3042DA-264E-4547-8B5D-D5DE7653CC9F}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
