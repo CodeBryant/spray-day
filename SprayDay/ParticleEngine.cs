@@ -20,6 +20,8 @@ namespace SprayDay
 		Texture2D sprayTexture;
 		Color color;
 
+        Point lastPoint;
+
 		public ParticleEngine(List<Texture2D> textures, SoundEffect ef, Texture2D st)
 		{
 			Particles = new List<Particle>();
@@ -56,6 +58,7 @@ namespace SprayDay
 					Particles.Add (GenerateNewParticle (color));
 				}
 				if (instance.State == SoundState.Stopped) { instance.Play (); }
+
 			} else {
 				instance.Stop ();
 			}
@@ -75,12 +78,6 @@ namespace SprayDay
 		public void Draw(SpriteBatch batch)
 		{
 			batch.Begin(SpriteSortMode.BackToFront, BlendState.Additive);
-			Primitives2D.LoadPixel (sprayTexture);
-			for (int i = 2; i < coords.Count; i++) {
-				//color.A = (byte)255;
-				//batch.PutPixel ((float)coords[i].X - sprayTexture.Width / 2, (float)coords[i].Y - sprayTexture.Height / 2, sprayTexture, color);
-				//batch.DrawLine(coords [i-1], coords [i], color);
-			}
 			for (int index = 0; index < Particles.Count; index++) {
 				Particles[index].Draw(batch);
 			}
